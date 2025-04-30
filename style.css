@@ -232,7 +232,7 @@ body {
 -----------------------------------------------------------*/
 .hero-content {
     padding: 220px 0;
-    background: url("images/cover.jpg") no-repeat;
+    background: url("images/pexels-nicolas-arroyo-386436004-16803238.jpg") no-repeat;
     background-size: cover;
 }
 
@@ -245,30 +245,32 @@ body {
     padding: 50px;
     margin: 0;
     font-family: mountains;
-    font-size:120px;
+    font-size: 11vw;
     background: -webkit-linear-gradient(#00d0ff, #25ffbf);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-shadow: -2px -3px 0 #fff400;
 }
 
 .hero-content .entry-header .entry-meta-date {
     position: absolute;
     width: 100%;
-    top: 20px;
+    top: 25px;
     font-family: 'Poppins', sans-serif;
     font-size: 24px;
     font-weight: 500;
-    color: hsl(0, 0%, 90%);
+    color: hsl(57.35deg 100% 50%);
     text-align: center;
+    text-shadow: 0 0 20px black;
 }
 
 @media screen and (min-width: 992px) {
     .hero-content .entry-header h2 {
-        font-size: 172px;
+        font-size: 126px;
     }
 
     .hero-content .entry-header .entry-meta-date {
-        top: 60px;
+        top: 50px;
     }
 }
 
@@ -293,6 +295,7 @@ body {
     font-weight: 600;
     line-height: 1;
     color: hsl(0, 0%, 100%);
+    text-shadow: 0 0 4px #988e18;
 }
 
 .countdown-holder label {
@@ -328,7 +331,7 @@ body {
 # The Lineup Artists - Headliners
 ------------------------------------------------------------*/
 .content-section {
-    min-height: 4640px;
+    /*min-height: 4640px;*/
     width: 100%;
     padding-bottom: 120px;
     background: url("images/middle-cover.jpg") no-repeat;
@@ -443,11 +446,11 @@ body {
     }
 
     .lineup-artists .lineup-artists-wrap .lineup-artists-description-container {
-        position: absolute;
         z-index: 99;
         top: 100px;
         left: -75px;
         width: calc(100% + 75px);
+        margin-bottom: 100px;
     }
 
     .lineup-artists .lineup-artists-wrap:nth-of-type(even) .lineup-artists-description-container {
@@ -665,7 +668,7 @@ body {
     height: 100%;
     padding: 30px;
     text-align: center;
-    background: rgba(0,0,0,.75);
+    background: rgba(0, 0, 0, .75);
     text-decoration: none;
     transition: all .5s;
     opacity: 0;
@@ -703,7 +706,7 @@ body {
     width: 100%;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
     .next-event-slider-wrap .swiper-button-next {
         bottom: -42px;
         width: 84px;
@@ -1181,7 +1184,7 @@ body {
     height: 100%;
 }
 
-@media screen and (min-width: 992px){
+@media screen and (min-width: 992px) {
     .testimonials-container,
     .testimonial-featured-image {
         width: 50%;
@@ -1196,7 +1199,7 @@ body {
 }
 
 
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1200px) {
     .testimonials-container,
     .testimonial-featured-image {
         width: 50%;
@@ -1208,7 +1211,7 @@ body {
 }
 
 
-@media screen and (min-width: 1500px){
+@media screen and (min-width: 1500px) {
     .testimonials-container,
     .testimonial-featured-image {
         width: 50%;
@@ -1276,13 +1279,13 @@ body {
     line-height: 1.8;
 }
 
-@media screen and (min-width: 576px){
+@media screen and (min-width: 576px) {
     .tabs .tab-nav {
         padding: 20px;
     }
 }
 
-@media screen and (min-width: 992px){
+@media screen and (min-width: 992px) {
     .tabs .tab-content {
         padding: 48px;
     }
@@ -1325,7 +1328,7 @@ body {
     color: #040608;
 }
 
-.single-event-details-row p.sold-out span{
+.single-event-details-row p.sold-out span {
     color: #ff0000;
 }
 
