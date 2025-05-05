@@ -1537,6 +1537,16 @@ body {
     color: #050505;
 }
 
+.location {
+    text-align: center;
+    color: #2edaf5;
+    text-shadow: 1px 1px 5px white;
+
+    a {
+        color: #2edaf5;
+    }
+}
+
 .blog-page .blog-list-page .blog-content .entry-content .entry-meta {
     margin-top: 6px;
     font-size: 12px;
