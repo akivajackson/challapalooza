@@ -183,7 +183,6 @@ body {
     transition: all 0.35s;
     text-decoration: none;
     font-size: 14px;
-    padding-left: 40px;
 }
 
 @media screen and (min-width: 992px) {
@@ -216,7 +215,7 @@ body {
     }
 
     .site-navigation ul li {
-        padding: 0;
+        padding: 0 0 0 40px;
     }
 
     /*.site-navigation ul li:nth-last-of-type(1) {*/
@@ -224,6 +223,9 @@ body {
     /*}*/
     .site-navigation ul li a {
         color: #fff;
+        background: #00d4fa;
+        padding: 4px 12px;
+        border-radius: 9px;
     }
 }
 
@@ -517,6 +519,7 @@ body {
     position: relative;
     margin-top: 110px;
     height: auto;
+    justify-content: center;
 }
 
 .the-complete-lineup-artists .artist-single {
