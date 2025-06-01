@@ -33,22 +33,21 @@
           </h1>
         </div>
 
-        <!--        COMMENTING OUT NAVIGATION UNTIL WE ADD MORE TO THE SITE-->
-        <!--        <div class="col-2 col-lg-8">-->
-        <!--          <nav class="site-navigation">-->
-        <!--            <div class="hamburger-menu d-lg-none">-->
-        <!--              <span></span><span></span><span></span><span></span>-->
-        <!--            </div>-->
-        <!--            <ul>-->
-        <!--              <li><a href="#">HOME</a></li>-->
-        <!--              <li><a href="#">ABOUT</a></li>-->
-        <!--              <li><a href="#">ARTISTS</a></li>-->
-        <!--              <li><a href="#">BLOG</a></li>-->
-        <!--              <li><a href="#">CONTACT</a></li>-->
-        <!--              <li><a href="#"><i class="fas fa-search"></i></a></li>-->
-        <!--            </ul>&lt;!&ndash; flex &ndash;&gt;-->
-        <!--          </nav>&lt;!&ndash; .site-navigation &ndash;&gt;-->
-        <!--        </div>&lt;!&ndash; .col-12 &ndash;&gt;-->
+        <div class="col-2 col-lg-8">
+          <nav class="site-navigation">
+            <div class="hamburger-menu d-lg-none">
+              <span></span><span></span><span></span><span></span>
+            </div>
+            <ul>
+              <!--                      <li><a href="/about">ABOUT</a></li>-->
+              <!--                      <li><a href="/venue">VENUE</a></li>-->
+              <!--                      <li><a href="/tickets">TICKETS</a></li>-->
+              <li><a href="/play">PLAY</a></li>
+              <li><a href="/volunteer">VOLUNTEER</a></li>
+              <!--                      <li><a href="#"><i class="fas fa-search"></i></a></li>-->
+            </ul><!-- flex -->
+          </nav><!-- .site-navigation -->
+        </div><!-- .col-12 -->
       </div><!-- .row -->
     </div><!-- container-fluid -->
   </div><!-- header-bar -->
@@ -61,8 +60,10 @@
         <div class="entry-header">
           <h2>Challapalooza</h2>
           <div class="entry-meta-date">09.07.2025</div>
+          <p>Boston's Jew<i>-ish</i> Music Festival</p>
         </div>
-          <h1 class="location"><a href="https://maps.app.goo.gl/ashPCJgKZ5CfRJxj6" target="_blank">Lincoln Park</a>, Somerville, MA</h1>
+        <h1 class="location"><a href="https://maps.app.goo.gl/ashPCJgKZ5CfRJxj6" target="_blank">Lincoln Park</a>,
+          Somerville, MA</h1>
 
         <div class="countdown flex flex-wrap justify-content-between" data-date="2025/09/07">
           <div class="countdown-holder">
@@ -84,7 +85,7 @@
     <div class="row">
       <div class="col-12">
         <div class="entry-footer">
-          <a href="https://forms.gle/ohKc6rg34dA7czVw9" target="_blank" class="btn">Volunteer</a>
+          <a href="/volunteer" target="_blank" class="btn">Volunteer</a>
           <a href="#headliners" class="btn current">See Lineup</a>
           <a href="https://partiful.com/e/0jNLZRnfijwmChpVUDMQ?" target="_blank" class="btn">Early Bird Tickets!</a>
         </div>
@@ -95,11 +96,73 @@
 
 <div class="content-section">
   <div class="container">
+    <div class="section" id="about-tabs">
+      <div class="entry-header ">
+        <h2 class="entry-title">About Challapalooza</h2>
+      </div><!-- entry-header -->
+
+      <div class="row  d-flex justify-content-center mt-5">
+        <div class="col-12 col-lg-9 mt-5 mt-lg-0 ">
+          <div class="tabs my-tabs">
+            <ul class="tabs-nav flex">
+              <li class="tab-nav flex justify-content-center align-items-center active" data-target="#tab_details">
+                Details
+              </li>
+              <li class="tab-nav flex justify-content-center align-items-center" data-target="#tab_venue">Venue</li>
+              <li class="tab-nav flex justify-content-center align-items-center" data-target="#tab_organizers">
+                Organizers
+              </li>
+              <!--              <li class="tab-nav flex justify-content-center align-items-center" data-target="#tab_about">About the-->
+              <!--                event-->
+              <!--              </li>-->
+            </ul><!-- tabs-nav -->
+
+            <div class="tabs-container">
+              <div id="tab_details" class="tab-content">
+                <!--                <h2 class="entry-header">10 years a mission</h2>-->
+
+                <p>The 1st Annual Challapalooza is Greater Boston’s Jew<i>-ish</i> Music
+                  Festival is going to be a giant celebration — a full day of
+                  live music by the badass local Jewish musicians, delicious food trucks, and a full day of fun in the
+                  park for all ages.</p>
+              </div>
+
+              <div id="tab_venue" class="tab-content">
+                <h2 class="entry-header">Lincoln Park</h2>
+                <p>Our beloved Lincoln Park is the home to many a cherished local event, from School of Honk to hanging
+                  out on shabbat. Come lounge in the grass, play frisbee and listen to the music!</p>
+              </div>
+
+              <div id="tab_organizers" class="tab-content">
+                <h2 class="entry-header">Volunteer Led</h2>
+
+                <p>Challapalooza is an all volunteer run effort, spearheaded by Akiva Jackson of Moishe House
+                  Somerville, with amazing amounts of help from a dedicated group of volunteers, including Heila Precel,
+                  Allison Moore, Alison Arnold, Jacob Smith, Jackson Mercer, and many more. <a href="/volunteer">Please
+                    join us</a>, we always need more people, both for planning and day-of volunteering.</p>
+
+              </div>
+
+              <!--              <div id="tab_about" class="tab-content">-->
+              <!--                <h2 class="entry-header">10 years a mission</h2>-->
+
+              <!--                <p>Curabitur venenatis efficitur lorem sed tempor. Integer aliquet tempor cursus. Nullam vestibulum-->
+              <!--                  convallis risus vel condimentum. Nullam auctor lorem in libero luctus, vel volutpat quam tincidunt.-->
+              <!--                  Morbi sodales, dolor id ultricies dictum, diam odio tempor purus, at ultrices elit nulla ac nisl.-->
+              <!--                  Vestibulum enim sapien, blandit finibus elit vitae, venenatis tempor enim.</p>-->
+              <!--              </div>-->
+            </div>
+          </div>
+        </div><!-- col-7 -->
+      </div><!-- row -->
+      <!-- entry-content -->
+    </div>
+    <!--MUSICIANS-->
     <div class="row">
       <div class="col-12">
         <div class="lineup-artists-headline" id="headliners">
           <div class="entry-title">
-            <p>JUST THE BEST</p>
+            <p>BOSTON'S TOP JEWISH TALENT</p>
             <h2>Headliners</h2>
           </div><!-- entry-title -->
 
@@ -193,94 +256,94 @@
 
     <div class="row">
       <div class="col-12">
-<!--        <div class="the-complete-lineup">-->
-<!--          <div class="entry-title">-->
-<!--            <p>The Best Local Jewish Musicians</p>-->
-<!--            <h2>The Complete Lineup - Coming Soon!</h2>-->
-<!--          </div>&lt;!&ndash; entry-title &ndash;&gt;-->
+        <!--        <div class="the-complete-lineup">-->
+        <!--          <div class="entry-title">-->
+        <!--            <p>The Best Local Jewish Musicians</p>-->
+        <!--            <h2>The Complete Lineup - Coming Soon!</h2>-->
+        <!--          </div>&lt;!&ndash; entry-title &ndash;&gt;-->
 
-<!--          &lt;!&ndash;          <div class="row the-complete-lineup-artists">&ndash;&gt;-->
-<!--          &lt;!&ndash;            <div class="col-6 col-md-4 col-lg-3 artist-single">&ndash;&gt;-->
-<!--          &lt;!&ndash;              <figure class="featured-image">&ndash;&gt;-->
-<!--          &lt;!&ndash;                <a href="#"> <img src="images/image-1.jpg" alt=""> </a>&ndash;&gt;-->
-<!--          &lt;!&ndash;                <a href="#" class="box-link"> <img src="images/box.jpg" alt=""> </a>&ndash;&gt;-->
-<!--          &lt;!&ndash;              </figure>&lt;!&ndash; featured-image &ndash;&gt;&ndash;&gt;-->
+        <!--          &lt;!&ndash;          <div class="row the-complete-lineup-artists">&ndash;&gt;-->
+        <!--          &lt;!&ndash;            <div class="col-6 col-md-4 col-lg-3 artist-single">&ndash;&gt;-->
+        <!--          &lt;!&ndash;              <figure class="featured-image">&ndash;&gt;-->
+        <!--          &lt;!&ndash;                <a href="#"> <img src="images/image-1.jpg" alt=""> </a>&ndash;&gt;-->
+        <!--          &lt;!&ndash;                <a href="#" class="box-link"> <img src="images/box.jpg" alt=""> </a>&ndash;&gt;-->
+        <!--          &lt;!&ndash;              </figure>&lt;!&ndash; featured-image &ndash;&gt;&ndash;&gt;-->
 
-<!--          &lt;!&ndash;              <h2>Miska Smith</h2>&ndash;&gt;-->
-<!--          &lt;!&ndash;            </div>&lt;!&ndash; artist-single &ndash;&gt;&ndash;&gt;-->
+        <!--          &lt;!&ndash;              <h2>Miska Smith</h2>&ndash;&gt;-->
+        <!--          &lt;!&ndash;            </div>&lt;!&ndash; artist-single &ndash;&gt;&ndash;&gt;-->
 
-<!--          &lt;!&ndash;            <div class="col-6 col-md-4 col-lg-3 artist-single">&ndash;&gt;-->
-<!--          &lt;!&ndash;              <figure class="featured-image">&ndash;&gt;-->
-<!--          &lt;!&ndash;                <a href="#"> <img src="images/image-2.jpg" alt=""> </a>&ndash;&gt;-->
-<!--          &lt;!&ndash;                <a href="#" class="box-link"> <img src="images/box.jpg" alt=""> </a>&ndash;&gt;-->
-<!--          &lt;!&ndash;              </figure>&lt;!&ndash; featured-image &ndash;&gt;&ndash;&gt;-->
+        <!--          &lt;!&ndash;            <div class="col-6 col-md-4 col-lg-3 artist-single">&ndash;&gt;-->
+        <!--          &lt;!&ndash;              <figure class="featured-image">&ndash;&gt;-->
+        <!--          &lt;!&ndash;                <a href="#"> <img src="images/image-2.jpg" alt=""> </a>&ndash;&gt;-->
+        <!--          &lt;!&ndash;                <a href="#" class="box-link"> <img src="images/box.jpg" alt=""> </a>&ndash;&gt;-->
+        <!--          &lt;!&ndash;              </figure>&lt;!&ndash; featured-image &ndash;&gt;&ndash;&gt;-->
 
-<!--          &lt;!&ndash;              <h2>Hayley Down</h2>&ndash;&gt;-->
-<!--          &lt;!&ndash;            </div>&lt;!&ndash; artist-single &ndash;&gt;&ndash;&gt;-->
+        <!--          &lt;!&ndash;              <h2>Hayley Down</h2>&ndash;&gt;-->
+        <!--          &lt;!&ndash;            </div>&lt;!&ndash; artist-single &ndash;&gt;&ndash;&gt;-->
 
-<!--          &lt;!&ndash;            <div class="col-6 col-md-4 col-lg-3 artist-single">&ndash;&gt;-->
-<!--          &lt;!&ndash;              <figure class="featured-image">&ndash;&gt;-->
-<!--          &lt;!&ndash;                <a href="#"> <img src="images/image-3.jpg" alt=""> </a>&ndash;&gt;-->
-<!--          &lt;!&ndash;                <a href="#" class="box-link"> <img src="images/box.jpg" alt=""> </a>&ndash;&gt;-->
-<!--          &lt;!&ndash;              </figure>&lt;!&ndash; featured-image &ndash;&gt;&ndash;&gt;-->
+        <!--          &lt;!&ndash;            <div class="col-6 col-md-4 col-lg-3 artist-single">&ndash;&gt;-->
+        <!--          &lt;!&ndash;              <figure class="featured-image">&ndash;&gt;-->
+        <!--          &lt;!&ndash;                <a href="#"> <img src="images/image-3.jpg" alt=""> </a>&ndash;&gt;-->
+        <!--          &lt;!&ndash;                <a href="#" class="box-link"> <img src="images/box.jpg" alt=""> </a>&ndash;&gt;-->
+        <!--          &lt;!&ndash;              </figure>&lt;!&ndash; featured-image &ndash;&gt;&ndash;&gt;-->
 
-<!--          &lt;!&ndash;              <h2>The Band Song</h2>&ndash;&gt;-->
-<!--          &lt;!&ndash;            </div>&lt;!&ndash; artist-single &ndash;&gt;&ndash;&gt;-->
+        <!--          &lt;!&ndash;              <h2>The Band Song</h2>&ndash;&gt;-->
+        <!--          &lt;!&ndash;            </div>&lt;!&ndash; artist-single &ndash;&gt;&ndash;&gt;-->
 
-<!--          &lt;!&ndash;            <div class="col-6 col-md-4 col-lg-3 artist-single">&ndash;&gt;-->
-<!--          &lt;!&ndash;              <figure class="featured-image">&ndash;&gt;-->
-<!--          &lt;!&ndash;                <a href="#"> <img src="images/image-4.jpg" alt=""> </a>&ndash;&gt;-->
-<!--          &lt;!&ndash;                <a href="#" class="box-link"> <img src="images/box.jpg" alt=""> </a>&ndash;&gt;-->
-<!--          &lt;!&ndash;              </figure>&lt;!&ndash; featured-image &ndash;&gt;&ndash;&gt;-->
+        <!--          &lt;!&ndash;            <div class="col-6 col-md-4 col-lg-3 artist-single">&ndash;&gt;-->
+        <!--          &lt;!&ndash;              <figure class="featured-image">&ndash;&gt;-->
+        <!--          &lt;!&ndash;                <a href="#"> <img src="images/image-4.jpg" alt=""> </a>&ndash;&gt;-->
+        <!--          &lt;!&ndash;                <a href="#" class="box-link"> <img src="images/box.jpg" alt=""> </a>&ndash;&gt;-->
+        <!--          &lt;!&ndash;              </figure>&lt;!&ndash; featured-image &ndash;&gt;&ndash;&gt;-->
 
-<!--          &lt;!&ndash;              <h2>Pink Machine</h2>&ndash;&gt;-->
-<!--          &lt;!&ndash;            </div>&lt;!&ndash; artist-single &ndash;&gt;&ndash;&gt;-->
+        <!--          &lt;!&ndash;              <h2>Pink Machine</h2>&ndash;&gt;-->
+        <!--          &lt;!&ndash;            </div>&lt;!&ndash; artist-single &ndash;&gt;&ndash;&gt;-->
 
-<!--          &lt;!&ndash;            <div class="col-6 col-md-4 col-lg-3 artist-single">&ndash;&gt;-->
-<!--          &lt;!&ndash;              <figure class="featured-image">&ndash;&gt;-->
-<!--          &lt;!&ndash;                <a href="#"> <img src="images/image-5.jpg" alt=""> </a>&ndash;&gt;-->
-<!--          &lt;!&ndash;                <a href="#" class="box-link"> <img src="images/box.jpg" alt=""> </a>&ndash;&gt;-->
-<!--          &lt;!&ndash;              </figure>&lt;!&ndash; featured-image &ndash;&gt;&ndash;&gt;-->
+        <!--          &lt;!&ndash;            <div class="col-6 col-md-4 col-lg-3 artist-single">&ndash;&gt;-->
+        <!--          &lt;!&ndash;              <figure class="featured-image">&ndash;&gt;-->
+        <!--          &lt;!&ndash;                <a href="#"> <img src="images/image-5.jpg" alt=""> </a>&ndash;&gt;-->
+        <!--          &lt;!&ndash;                <a href="#" class="box-link"> <img src="images/box.jpg" alt=""> </a>&ndash;&gt;-->
+        <!--          &lt;!&ndash;              </figure>&lt;!&ndash; featured-image &ndash;&gt;&ndash;&gt;-->
 
-<!--          &lt;!&ndash;              <h2>Brasil Band</h2>&ndash;&gt;-->
-<!--          &lt;!&ndash;            </div>&lt;!&ndash; artist-single &ndash;&gt;&ndash;&gt;-->
+        <!--          &lt;!&ndash;              <h2>Brasil Band</h2>&ndash;&gt;-->
+        <!--          &lt;!&ndash;            </div>&lt;!&ndash; artist-single &ndash;&gt;&ndash;&gt;-->
 
-<!--          &lt;!&ndash;            <div class="col-6 col-md-4 col-lg-3 artist-single">&ndash;&gt;-->
-<!--          &lt;!&ndash;              <figure class="featured-image">&ndash;&gt;-->
-<!--          &lt;!&ndash;                <a href="#"> <img src="images/image-6.jpg" alt=""> </a>&ndash;&gt;-->
-<!--          &lt;!&ndash;                <a href="#" class="box-link"> <img src="images/box.jpg" alt=""> </a>&ndash;&gt;-->
-<!--          &lt;!&ndash;              </figure>&lt;!&ndash; featured-image &ndash;&gt;&ndash;&gt;-->
+        <!--          &lt;!&ndash;            <div class="col-6 col-md-4 col-lg-3 artist-single">&ndash;&gt;-->
+        <!--          &lt;!&ndash;              <figure class="featured-image">&ndash;&gt;-->
+        <!--          &lt;!&ndash;                <a href="#"> <img src="images/image-6.jpg" alt=""> </a>&ndash;&gt;-->
+        <!--          &lt;!&ndash;                <a href="#" class="box-link"> <img src="images/box.jpg" alt=""> </a>&ndash;&gt;-->
+        <!--          &lt;!&ndash;              </figure>&lt;!&ndash; featured-image &ndash;&gt;&ndash;&gt;-->
 
-<!--          &lt;!&ndash;              <h2>Mickey</h2>&ndash;&gt;-->
-<!--          &lt;!&ndash;            </div>&lt;!&ndash; artist-single &ndash;&gt;&ndash;&gt;-->
+        <!--          &lt;!&ndash;              <h2>Mickey</h2>&ndash;&gt;-->
+        <!--          &lt;!&ndash;            </div>&lt;!&ndash; artist-single &ndash;&gt;&ndash;&gt;-->
 
-<!--          &lt;!&ndash;            <div class="col-6 col-md-4 col-lg-3 artist-single">&ndash;&gt;-->
-<!--          &lt;!&ndash;              <figure class="featured-image">&ndash;&gt;-->
-<!--          &lt;!&ndash;                <a href="#"> <img src="images/image-7.jpg" alt=""> </a>&ndash;&gt;-->
-<!--          &lt;!&ndash;                <a href="#" class="box-link"> <img src="images/box.jpg" alt=""> </a>&ndash;&gt;-->
-<!--          &lt;!&ndash;              </figure>&lt;!&ndash; featured-image &ndash;&gt;&ndash;&gt;-->
+        <!--          &lt;!&ndash;            <div class="col-6 col-md-4 col-lg-3 artist-single">&ndash;&gt;-->
+        <!--          &lt;!&ndash;              <figure class="featured-image">&ndash;&gt;-->
+        <!--          &lt;!&ndash;                <a href="#"> <img src="images/image-7.jpg" alt=""> </a>&ndash;&gt;-->
+        <!--          &lt;!&ndash;                <a href="#" class="box-link"> <img src="images/box.jpg" alt=""> </a>&ndash;&gt;-->
+        <!--          &lt;!&ndash;              </figure>&lt;!&ndash; featured-image &ndash;&gt;&ndash;&gt;-->
 
-<!--          &lt;!&ndash;              <h2>DJ Girl</h2>&ndash;&gt;-->
-<!--          &lt;!&ndash;            </div>&lt;!&ndash; artist-single &ndash;&gt;&ndash;&gt;-->
+        <!--          &lt;!&ndash;              <h2>DJ Girl</h2>&ndash;&gt;-->
+        <!--          &lt;!&ndash;            </div>&lt;!&ndash; artist-single &ndash;&gt;&ndash;&gt;-->
 
-<!--          &lt;!&ndash;            <div class="col-6 col-md-4 col-lg-3 artist-single">&ndash;&gt;-->
-<!--          &lt;!&ndash;              <figure class="featured-image">&ndash;&gt;-->
-<!--          &lt;!&ndash;                <a href="#"> <img src="images/image-8.jpg" alt=""> </a>&ndash;&gt;-->
-<!--          &lt;!&ndash;                <a href="#" class="box-link"> <img src="images/box.jpg" alt=""> </a>&ndash;&gt;-->
-<!--          &lt;!&ndash;              </figure>&lt;!&ndash; featured-image &ndash;&gt;&ndash;&gt;-->
+        <!--          &lt;!&ndash;            <div class="col-6 col-md-4 col-lg-3 artist-single">&ndash;&gt;-->
+        <!--          &lt;!&ndash;              <figure class="featured-image">&ndash;&gt;-->
+        <!--          &lt;!&ndash;                <a href="#"> <img src="images/image-8.jpg" alt=""> </a>&ndash;&gt;-->
+        <!--          &lt;!&ndash;                <a href="#" class="box-link"> <img src="images/box.jpg" alt=""> </a>&ndash;&gt;-->
+        <!--          &lt;!&ndash;              </figure>&lt;!&ndash; featured-image &ndash;&gt;&ndash;&gt;-->
 
-<!--          &lt;!&ndash;              <h2>Stan Smith</h2>&ndash;&gt;-->
-<!--          &lt;!&ndash;            </div>&lt;!&ndash; artist-single &ndash;&gt;&ndash;&gt;-->
-<!--          &lt;!&ndash;          </div>&lt;!&ndash; the-complete-lineup-artists &ndash;&gt;&ndash;&gt;-->
+        <!--          &lt;!&ndash;              <h2>Stan Smith</h2>&ndash;&gt;-->
+        <!--          &lt;!&ndash;            </div>&lt;!&ndash; artist-single &ndash;&gt;&ndash;&gt;-->
+        <!--          &lt;!&ndash;          </div>&lt;!&ndash; the-complete-lineup-artists &ndash;&gt;&ndash;&gt;-->
 
-<!--          &lt;!&ndash;          <div class="row justify-content-center">&ndash;&gt;-->
-<!--          &lt;!&ndash;            <div class="see-complete-lineup">&ndash;&gt;-->
-<!--          &lt;!&ndash;              <div class="entry-footer">&ndash;&gt;-->
-<!--          &lt;!&ndash;                <a href="#" class="btn">See all lineup</a>&ndash;&gt;-->
-<!--          &lt;!&ndash;              </div>&ndash;&gt;-->
-<!--          &lt;!&ndash;            </div>&ndash;&gt;-->
-<!--          &lt;!&ndash;          </div>&ndash;&gt;-->
-<!--        </div>-->
+        <!--          &lt;!&ndash;          <div class="row justify-content-center">&ndash;&gt;-->
+        <!--          &lt;!&ndash;            <div class="see-complete-lineup">&ndash;&gt;-->
+        <!--          &lt;!&ndash;              <div class="entry-footer">&ndash;&gt;-->
+        <!--          &lt;!&ndash;                <a href="#" class="btn">See all lineup</a>&ndash;&gt;-->
+        <!--          &lt;!&ndash;              </div>&ndash;&gt;-->
+        <!--          &lt;!&ndash;            </div>&ndash;&gt;-->
+        <!--          &lt;!&ndash;          </div>&ndash;&gt;-->
+        <!--        </div>-->
       </div>
     </div>
 

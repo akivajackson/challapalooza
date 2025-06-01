@@ -62,6 +62,7 @@ body {
     z-index: 99;
     width: 100%;
     padding: 40px 0;
+    background-color: #1593a747;
 }
 
 .header-bar .site-branding {
@@ -218,9 +219,9 @@ body {
         padding: 0;
     }
 
-    .site-navigation ul li:nth-last-of-type(1) {
-        padding-left: 60px;
-    }
+    /*.site-navigation ul li:nth-last-of-type(1) {*/
+    /*    padding-left: 60px;*/
+    /*}*/
 
     .site-navigation ul li a {
         color: #fff;
@@ -363,7 +364,7 @@ body {
     color: hsl(0, 0%, 48%);
 }
 
-.lineup-artists-headline .entry-title h2 {
+.entry-title h2, h2.entry-title {
     width: 100%;
     font-size: 48px;
     font-weight: 600;
@@ -1961,6 +1962,9 @@ body {
 }
 
 
+
+/* Akiva's styles*/
+
 .contact-button {
     margin-top: 30px;
     background-color: #00d0ff;
@@ -1973,3 +1977,28 @@ body {
     padding: 20px;
 }
 
+.entry-header p {
+    color: #002363;
+    font-size: 25px;
+    top: -41px;
+    position: relative;
+    font-weight: 500;
+    text-shadow: 1px 1px 5px white;
+}
+
+.section {
+    padding-top: 115px;
+}
+
+.my-tabs .tab-content {
+h2 {
+    margin-bottom: 35px;
+}
+    p {
+        margin-top: 15px;
+    }
+}
+
+body {
+    overflow-x: hidden
+}
