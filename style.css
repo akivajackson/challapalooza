@@ -388,8 +388,13 @@ body {
 }
 
 .lineup-artists .featured-image img {
-    width: 100%;
+    width: 264px;
     max-width: 100%;
+
+    &#itay {
+        width: 400px
+    }
+
 }
 
 /*------------------------------------------------------------
@@ -515,42 +520,47 @@ body {
 }
 
 .the-complete-lineup-artists .artist-single {
-    margin-bottom: 0px;
-}
+    margin-bottom: 0;
 
-.the-complete-lineup-artists .artist-single:nth-of-type(even) {
-    margin-top: 120px;
-}
 
-.the-complete-lineup-artists .artist-single figure {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
+    &:nth-of-type(even) {
+        margin-top: 120px;
+    }
 
-.the-complete-lineup-artists .artist-single .box-link {
-    position: absolute;
-    top: 15px;
-    left: 232px;
-    cursor: pointer;
-}
+    figure {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
 
-.the-complete-lineup-artists .artist-single .featured-image img {
-    max-width: 100%;
-    height: auto;
-    width: 255px;
-}
+    .box-link {
+        position: absolute;
+        top: 15px;
+        left: 232px;
+        cursor: pointer;
+    }
 
-.the-complete-lineup-artists .artist-single .featured-image a {
-    display: block;
-}
+    .featured-image {
+        img {
+            max-width: 100%;
+            height: auto;
+            width: 255px;
 
-.the-complete-lineup-artists .artist-single h2 {
-    margin-top: 38px;
-    font-size: 24px;
-    font-weight: 600;
-    color: hsl(0, 0%, 2%);
-    text-align: center;
+        }
+
+        a {
+            display: block;
+        }
+    }
+
+
+    h2 {
+        margin-top: 38px;
+        font-size: 24px;
+        font-weight: 600;
+        color: hsl(0, 0%, 2%);
+        text-align: center;
+    }
 }
 
 @media screen and (min-width: 768px) {
