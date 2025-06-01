@@ -222,7 +222,6 @@ body {
     /*.site-navigation ul li:nth-last-of-type(1) {*/
     /*    padding-left: 60px;*/
     /*}*/
-
     .site-navigation ul li a {
         color: #fff;
     }
@@ -318,7 +317,7 @@ body {
     background: hsl(0, 0%, 100%);
     padding: 16px 40px;
     border-radius: 0;
-    margin-right: 20px;
+    margin: 10px;
     color: hsl(0, 0%, 17%);
     font-weight: 600;
 }
@@ -337,6 +336,7 @@ body {
     padding-bottom: 120px;
     background: url("images/middle-cover.jpg") no-repeat;
     background-size: 100% auto;
+    overflow-x: hidden;
 }
 
 .content-section .middle-cover {
@@ -857,6 +857,7 @@ body {
     color: hsl(0, 0%, 100%);
     mix-blend-mode: overlay;
     z-index: 2;
+    overflow-x: hidden;
 }
 
 /*------------------------------------------------------------
@@ -883,14 +884,16 @@ body {
 }
 
 .footer-content-wrapper .entry-title a {
-    font-size: 52px;
+    font-size: 42px;
     font-weight: 700;
     color: hsl(0, 0%, 100%);
     line-height: 1;
     text-decoration: none;
+    overflow-x: hidden;
+    max-width: 100%;
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 776px) {
     .footer-content-wrapper .entry-title a {
         font-size: 100px;
     }
@@ -1972,7 +1975,6 @@ body {
 }
 
 
-
 /* Akiva's styles*/
 
 .contact-button {
@@ -2001,9 +2003,10 @@ body {
 }
 
 .my-tabs .tab-content {
-h2 {
-    margin-bottom: 35px;
-}
+    h2 {
+        margin-bottom: 35px;
+    }
+
     p {
         margin-top: 15px;
     }
