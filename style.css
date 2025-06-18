@@ -373,6 +373,12 @@ body {
     color: hsl(0, 0%, 0%);
 }
 
+.entry-title {
+    h1, h2, h3, h4 {
+        color: black;
+    }
+}
+
 /*------------------------------------------------------------
 ## lineup-artists
 ------------------------------------------------------------*/
@@ -390,11 +396,14 @@ body {
 }
 
 .lineup-artists .featured-image img {
-    width: 264px;
+    width: 500px;
     max-width: 100%;
 
     &#itay {
-        width: 400px
+        width: 600px;
+        @media (min-width: 992px) {
+            max-width: revert;
+        }
     }
 
 }
@@ -457,6 +466,9 @@ body {
         z-index: 99;
         top: 100px;
         left: -75px;
+        @media screen and (min-width: 1200px) {
+            left: 120px;
+        }
         width: calc(100% + 75px);
         margin-bottom: 100px;
     }
