@@ -1,0 +1,100 @@
+      /* Donor Levels Styling */
+      .donor-levels {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 2rem;
+          margin-bottom: 4rem;
+      }
+
+      .donor-card {
+          background: #fff;
+          color: #040608;
+          border-radius: 18px;
+          box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+          padding: 2rem 3rem;
+          min-width: 260px;
+          max-width: 420px;
+          text-align: center;
+          font-size: 1.5rem;
+          font-weight: 600;
+          letter-spacing: 1px;
+          border-left: 8px solid #00d0ff;
+          transition: transform 0.15s;
+      }
+
+      .donor-card.braid {
+          border-color: #ffb347;
+      }
+
+      .donor-card.lechem {
+          border-color: #25ffbf;
+      }
+
+      .donor-card.dough {
+          border-color: #ff63a6;
+      }
+
+      .donor-card.flour {
+          border-color: #a3e635;
+      }
+
+      .donor-card.yeast {
+          border-color: #facc15;
+      }
+
+      .donor-card:hover {
+          transform: translateY(-6px) scale(1.03);
+          box-shadow: 0 16px 48px rgba(0, 0, 0, 0.16);
+      }
+
+      .donor-card ul {
+          margin-top: 1rem;
+          padding-left: 0;
+          list-style: none;
+          font-size: 1rem;
+          font-weight: 400;
+      }
+
+      .donor-card a {
+          color: #00b1a4;
+          text-decoration: underline;
+          font-weight: 500;
+      }
+
+      .donor-logos {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 3rem;
+          margin-bottom: 2.5rem;
+          flex-wrap: wrap;
+      }
+
+      .donor-logos img {
+          max-height: 70px;
+          background: #fff;
+          border-radius: 12px;
+          box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+          padding: 0.5rem 1rem;
+      }
+
+      .donor-logos .logo-label {
+          text-align: center;
+          font-size: 1rem;
+          margin-top: 0.5rem;
+          color: #222;
+          font-weight: 500;
+      }
+
+      @media (max-width: 600px) {
+          .donor-card {
+              padding: 1.2rem 0.7rem;
+              font-size: 1.1rem;
+          }
+
+          .donor-logos {
+              gap: 1.2rem;
+          }
+      }
+  
