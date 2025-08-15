@@ -14,13 +14,17 @@
           box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
           padding: 2rem 3rem;
           min-width: 260px;
-          max-width: 420px;
+          max-width: 600px;
           text-align: center;
           font-size: 1.5rem;
           font-weight: 600;
           letter-spacing: 1px;
           border-left: 8px solid #00d0ff;
           transition: transform 0.15s;
+          
+          .donor-amount {
+              font-size: 1rem;
+          }
       }
 
       .donor-card.braid {
@@ -63,6 +67,7 @@
       }
 
       .donor-logos {
+          margin-top: 30px;
           display: flex;
           justify-content: center;
           align-items: center;
