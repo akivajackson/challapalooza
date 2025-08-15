@@ -2082,3 +2082,10 @@ h2.entry-title {
 body {
     overflow-x: hidden
 }
+
+#tab_food {
+    img {
+        width: 300px;
+        border-radius: 10%;
+    }
+}
