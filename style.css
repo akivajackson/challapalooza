@@ -37,9 +37,23 @@ body {
 .home-page {
     background: url(images/middle-cover.jpg) no-repeat;
 }
+
 .btn {
-        background: -webkit-linear-gradient(#00d0ff, #25ffbf);
+    background: -webkit-linear-gradient(#00d0ff, #25ffbf);
     color: hsl(0, 0%, 0%);
+
+    &.big-button {
+        width: 360px;
+        height: 100px;
+        font-size: 40px;
+        text-align: center;
+
+        @media (max-width: 768px) {
+            width: 220px;
+            height: 80px;
+            font-size: 24px;
+        }
+    }
 }
 
 .site-header {
@@ -290,6 +304,10 @@ body {
 .countdown-holder {
     min-width: 150px;
     margin-bottom: 30px;
+
+    @media (max-width: 540px) {
+        text-align: center
+    }
 }
 
 .countdown-holder .dday,
@@ -340,7 +358,7 @@ body {
 .content-section {
     /*min-height: 4640px;*/
     width: 100%;
-    padding-bottom: 120px;
+    /*padding-bottom: 120px;*/
     background: url("images/middle-cover.jpg") no-repeat;
     background-size: 100% auto;
     overflow-x: hidden;
@@ -580,7 +598,7 @@ h2.entry-title {
         text-shadow: 0 1px 0px #00d0ff, 0 0px 1px #fff;
     }
 
-    .artist-genre+h2 {
+    .artist-genre + h2 {
         margin-top: 12px;
     }
 
@@ -1599,7 +1617,11 @@ h2.entry-title {
 .location {
     text-align: center;
     color: #2edaf5;
-    text-shadow: 1px 1px 5px white;
+    text-shadow: 0 0 5px rgba(223, 235, 247, 0.5),
+    0 4px 5px rgba(223, 235, 247, 0.8),
+    0 -4px 5px rgba(223, 235, 247, 0.8),
+    4px 0 5px rgba(223, 235, 247, 0.8),
+    -4px 0 5px rgba(223, 235, 247, 0.8);
 
     a {
         color: #2edaf5;
