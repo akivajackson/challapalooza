@@ -953,6 +953,7 @@ h2.entry-title {
     text-decoration: none;
     overflow-x: hidden;
     max-width: 100%;
+
     &:hover {
         color: white
     }
@@ -1940,6 +1941,11 @@ h2.entry-title {
     cursor: pointer;
 }
 
+ .accordion-and-tabs-wrap .merch.accordion-wrap .entry-title {
+     background: -webkit-linear-gradient(rgba(0, 208, 255, 0.2), rgba(37, 255, 191, 0.2));
+    width: 100%;
+}
+
 .accordion-and-tabs-wrap .accordion-wrap .entry-title .arrow-d::before {
     content: "-";
 }
@@ -1948,7 +1954,7 @@ h2.entry-title {
     content: "+";
 }
 
-.accordion-and-tabs-wrap .accordion-wrap .active {
+.accordion-and-tabs-wrap .accordion-wrap .active.entry-title  {
     background: -webkit-linear-gradient(#00d0ff, #25ffbf);
 }
 

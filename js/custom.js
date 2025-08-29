@@ -102,15 +102,21 @@
 
     // Accordion & Toggle
     $('.accordion-wrap.type-accordion').collapsible({
-        accordion: true,
+        accordion: false,
         contentOpen: 0,
         arrowRclass: 'arrow-r',
         arrowDclass: 'arrow-d'
     });
 
     $('.accordion-wrap .entry-title').on('click', function() {
-        $('.accordion-wrap .entry-title').removeClass('active');
-        $(this).addClass('active');
+        if ($(this).hasClass('active')) {
+            $(this).removeClass('active');
+            console.log('remove');
+        } else {
+            $('.accordion-wrap .entry-title').removeClass('active');
+            $(this).addClass('active');
+            console.log('add');
+        }
     });
 
     // Circular Progress Bar
