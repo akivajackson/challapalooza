@@ -101,7 +101,13 @@
     });
 
     // Accordion & Toggle
-    $('.accordion-wrap.type-accordion').collapsible({
+    $('.accordion-wrap.type-accordion:not(.not-accordion)').collapsible({
+        accordion: true,
+        contentOpen: 0,
+        arrowRclass: 'arrow-r',
+        arrowDclass: 'arrow-d'
+    });
+    $('.accordion-wrap.type-accordion.not-accordion').collapsible({
         accordion: false,
         contentOpen: 0,
         arrowRclass: 'arrow-r',
