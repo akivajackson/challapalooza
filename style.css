@@ -87,11 +87,31 @@ body {
     margin-bottom: 0;
     font-size: 30px;
     font-weight: 800;
+
+    img {
+        height: 33px;
+        margin-right: 6px;
+    }
 }
 
 .header-bar .site-branding a {
     color: hsl(0, 0%, 100%);
     text-decoration: none;
+}
+
+li.moho-logo {
+    margin-left: -20px;
+
+    a.moho {
+        background-color: rgb(162 241 255 / 50%); /* #00d4fa with 20% opacity */
+        border-radius: 12px; /* adjust as needed */
+        padding: .1rem; /* optional */
+
+        img {
+            height: 33px;
+
+        }
+    }
 }
 
 /*------------------------------------------------------------
@@ -1941,8 +1961,8 @@ h2.entry-title {
     cursor: pointer;
 }
 
- .accordion-and-tabs-wrap .merch.accordion-wrap .entry-title {
-     background: -webkit-linear-gradient(rgba(0, 208, 255, 0.2), rgba(37, 255, 191, 0.2));
+.accordion-and-tabs-wrap .merch.accordion-wrap .entry-title {
+    background: -webkit-linear-gradient(rgba(0, 208, 255, 0.2), rgba(37, 255, 191, 0.2));
     width: 100%;
 }
 
@@ -1954,7 +1974,7 @@ h2.entry-title {
     content: "+";
 }
 
-.accordion-and-tabs-wrap .accordion-wrap .active.entry-title  {
+.accordion-and-tabs-wrap .accordion-wrap .active.entry-title {
     background: -webkit-linear-gradient(#00d0ff, #25ffbf);
 }
 
