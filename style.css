@@ -101,9 +101,15 @@ body {
 
 li.moho-logo {
     margin-left: -20px;
+    display: flex;
 
     a.moho {
-        background-color: rgb(162 241 255 / 50%); /* #00d4fa with 20% opacity */
+        @media (min-width: 1000px ) {
+            background-color: rgb(162 241 255 / 50%); /* #00d4fa with 20% opacity */
+        }
+        @media (max-width: 1000px) {
+            margin-left: 10px;
+        }
         border-radius: 12px; /* adjust as needed */
         padding: .1rem; /* optional */
 
@@ -239,6 +245,7 @@ li.moho-logo {
 
     .site-navigation ul {
         display: flex;
+        row-gap: 10px;
         flex-wrap: wrap;
         justify-content: flex-end;
         align-items: center;
