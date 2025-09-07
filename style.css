@@ -2125,3 +2125,32 @@ body {
         border-radius: 10%;
     }
 }
+
+.rain-warning {
+    background: #ff3a9ce6;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+
+    h1 {
+        background: -webkit-linear-gradient(#00d0ff, #25ffbf);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: -2px -3px 0 #fff400;
+        padding: 20px;
+        margin: 0;
+        font-family: mountains;
+        font-size: 11vw;
+        padding-top: 40px;
+    }
+
+    p {
+        color: #fff400;
+        font-size: 20px;
+        font-weight: 600;
+
+        a {
+        }
+    }
+}
