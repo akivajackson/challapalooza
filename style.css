@@ -279,6 +279,7 @@ li.moho-logo {
 -----------------------------------------------------------*/
 .hero-content {
     padding: 220px 0;
+    padding-bottom: 100px;
     background: url("images/pexels-nicolas-arroyo-386436004-16803238.jpg") no-repeat;
     background-size: cover;
 }
@@ -360,7 +361,7 @@ li.moho-logo {
 ## hero-content entry-footer
 ------------------------------------------------------------*/
 .hero-content .entry-footer {
-    margin-top: 125px;
+    /*margin-top: 125px;*/
     text-align: center;
 }
 
@@ -1647,12 +1648,12 @@ h2.entry-title {
 
 .location {
     text-align: center;
-    color: #2edaf5;
-    text-shadow: 0 0 5px rgba(223, 235, 247, 0.5),
-    0 4px 5px rgba(223, 235, 247, 0.8),
-    0 -4px 5px rgba(223, 235, 247, 0.8),
-    4px 0 5px rgba(223, 235, 247, 0.8),
-    -4px 0 5px rgba(223, 235, 247, 0.8);
+    color: #9dedff;
+    /*text-shadow: 0 0 5px rgba(223, 235, 247, 0.5),*/
+    /*0 4px 5px rgba(223, 235, 247, 0.8),*/
+    /*0 -4px 5px rgba(223, 235, 247, 0.8),*/
+    /*4px 0 5px rgba(223, 235, 247, 0.8),*/
+    /*-4px 0 5px rgba(223, 235, 247, 0.8);*/
 
     a {
         color: #2edaf5;
@@ -2093,12 +2094,12 @@ h2.entry-title {
 }
 
 .entry-header p {
-    color: #002363;
+    color: #9dedff;
     font-size: 25px;
     top: -41px;
     position: relative;
     font-weight: 500;
-    text-shadow: 1px 1px 5px white;
+    /*text-shadow: 1px 1px 5px white;*/
 }
 
 .section {
