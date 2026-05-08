@@ -48,6 +48,22 @@ body {
         font-size: 40px;
         text-align: center;
 
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        white-space: normal; /* allow wrapping */
+        max-width: 100%;
+
+        .btn-subtext {
+            display: block;
+            margin-top: 0.2rem;
+            font-size: 0.48em;
+            line-height: .9;
+            margin-bottom: 0.8rem;
+            opacity: 0.95;
+        }
+
         @media (max-width: 768px) {
             width: 220px;
             height: 80px;
