@@ -2170,3 +2170,8 @@ body {
         }
     }
 }
+
+#paypal-form-fields-container-8NG32GZMZCDL2 {
+    justify-content: center;
+    flex-direction: row;
+}

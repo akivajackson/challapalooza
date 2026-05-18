@@ -26,6 +26,10 @@
   <meta property="og:title" content="Challapalooza"/>
   <meta property="og:description" content="Boston's Jew-ish Music Festival"/>
   <meta property="og:image" content="https://www.challapalooza.org/images/challapalooza_poster.jpg"/>
+  <script
+    src="https://www.paypal.com/sdk/js?client-id=BAAXbBZgbs-bnoxnHJ7TXZqeIUOWfJkGmVAELiBN-kVUwsrBgOTeEo-4vxRlgGsZj17ehBCmCqjeUuovWA&components=hosted-buttons&enable-funding=venmo&currency=USD"></script>
+
+
 </head>
 
 <body class="tickets-page">
@@ -86,18 +90,10 @@
   <div class="container">
     <div class="text-center mb-5">
       <div class="donate-cta text-center mb-5">
-        <h4 class="mb-3" style="font-weight:700;color:#040608;">Support Challapalooza!</h4>
-        <p>We’re currently finalizing a fiscal sponsor, which will allow donations to be tax-deductible.</p>
-
-        <p>In the meantime, you can support the festival directly through our ticketing page (please note: contributions are not tax-deductible at this time). If tax deductibility is important to you, we’re happy to follow up once our sponsor is in place.</p>
-
-        <b>Want to partner or support us in a bigger way?</b>
-        <p>Email us at <a href="mailto:challapalooza@gmail.com">challapalooza@gmail.com</a> — we’d love to connect.</p>
-        <a href="/tickets" target="_blank" class="btn gradient"
-           style="    font-size: 1.3rem; padding: 28px 80px; border-radius: 2rem; font-weight: 600; margin-bottom: 100px;">
-          Support the Festival
-        </a>
-
+        <p>All donations are tax-deductible through the generous support of our fiscal sponsor, the <a
+          href="https://ctmd.org/">Center for Traditional Music and Dance</a></p>
+        <div id="paypal-container-8NG32GZMZCDL2"></div>
+        <script> paypal.HostedButtons({hostedButtonId: "8NG32GZMZCDL2",}).render("#paypal-container-8NG32GZMZCDL2") </script>
       </div>
 
       <h3 class="mb-3">Made possible by</h3>
@@ -122,7 +118,13 @@
               <div class="logo-label">Tremont Street Synagogue</div>
             </a>
           </div>
-          <div>
+          <div style="max-width: 180px;">
+            <img src="https://ctmd.org/wp-content/uploads/2020/12/ctmd-logo-2025-1024x717.png" alt="Center for Traditional Music and Dance Logo">
+            <a href="https://ctmd.org/">
+              <div class="logo-label">Center for Traditional Music and Dance</div>
+            </a>
+          </div>
+          <div style="max-width: 180px;">
             <img src="images/natalie_rose_comedy.jpg" alt="Natalie Rose Comedy Logo">
             <a href="https://www.instagram.com/natalienewhobby/">
               <div class="logo-label">Natalie Rose Comedy</div>
