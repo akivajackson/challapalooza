@@ -1359,7 +1359,11 @@ h2.entry-title {
 # Page Header
 ------------------------------------------------------------*/
 .tickets-page .page-header {
-    background: url("images/tickets-page-header-background.jpg") no-repeat;
+    /*background: url("images/tickets-page-header-background.jpg") no-repeat;*/
+
+    h2, ul, li > a {
+        color: black;
+    }
 }
 
 .tickets-page .tabs {
@@ -1850,55 +1854,65 @@ h2.entry-title {
 ------------------------------------------------------------*/
 .elements-page {
     background: url("images/elements-total-background.jpg") no-repeat;
+
+
+    .page-header {
+        background: url("images/elements-header-background.jpg") no-repeat;
+    }
+
 }
 
-.elements-page .page-header {
-    background: url("images/elements-header-background.jpg") no-repeat;
-}
-
-.elements-page .elements-wrap {
+.elements-wrap {
     margin-bottom: 110px;
-}
 
-.elements-page .elements-wrap .entry-header h2.entry-title {
-    color: #040608;
-    font-size: 48px;
-    font-weight: 600;
-}
+    .entry-content .row {
+        .icon-box {
+            @media screen and (min-width: 768px) {
+                padding: 25px;
+            }
+        }
+    }
 
-.elements-page .elements-wrap h2.entry-title {
-    margin-bottom: 90px;
-}
+    .entry-header h2.entry-title {
+        color: #040608;
+        font-size: 48px;
+        font-weight: 600;
+    }
 
-.elements-page .elements-wrap .entry-content .btn {
-    height: 55px;
-    width: 165px;
-    padding: 10px 20px;
-    margin-right: 20px;
-    border-radius: 0;
-    font-size: 16px;
-    font-weight: 500;
-    color: #040608;
-}
+    h2.entry-title {
+        margin-bottom: 90px;
+    }
 
-.elements-page .elements-wrap .entry-content .gradient {
-    background: -webkit-linear-gradient(#00d0ff, #25ffbf);
-}
+    .entry-content .btn {
+        height: 55px;
+        width: 165px;
+        padding: 10px 20px;
+        margin-right: 20px;
+        border-radius: 0;
+        font-size: 16px;
+        font-weight: 500;
+        color: #040608;
+    }
 
-.elements-page .elements-wrap .entry-content .white {
-    background: white;
-    box-shadow: 0 13px 50px 9px rgba(0, 0, 0, 0.1);
-}
+    .entry-content .gradient {
+        background: -webkit-linear-gradient(#00d0ff, #25ffbf);
+    }
 
-.elements-page .elements-wrap .entry-content .border-blu {
-    border: 2px solid #0de7e4;
-}
+    .entry-content .white {
+        background: white;
+        box-shadow: 0 13px 50px 9px rgba(0, 0, 0, 0.1);
+    }
 
-.elements-page .elements-wrap .entry-content .color-border {
-    border: 2px solid #0de7e4;
-    padding: 6px;
-    background: #0de7e4;
-    background-clip: content-box;
+    .entry-content .border-blu {
+        border: 2px solid #0de7e4;
+    }
+
+    .entry-content .color-border {
+        border: 2px solid #0de7e4;
+        padding: 6px;
+        background: #0de7e4;
+        background-clip: content-box;
+    }
 }
 
 .counter-box {
@@ -2051,12 +2065,14 @@ h2.entry-title {
 .icon-box .entry-header {
     position: relative;
     margin: 0;
+    display: flex;
+    align-items: flex-end;
+    height: 48px
 }
 
 .icon-box .entry-header::before {
     position: absolute;
     content: "01.";
-    top: -18px;
     font-size: 48px;
     font-weight: 500;
     line-height: 1;
@@ -2071,6 +2087,7 @@ h2.entry-title {
     font-size: 24px;
     font-weight: 600;
     color: #050505;
+    line-height: 1;
 }
 
 .icon-box .entry-content {
@@ -2078,7 +2095,6 @@ h2.entry-title {
     color: #989898;
     font-size: 15px;
     line-height: 2;
-    word-break: break-all;
 }
 
 .icon-box-1 .entry-header::before {
@@ -2093,6 +2109,9 @@ h2.entry-title {
     content: "03.";
 }
 
+.icon-box-4 .entry-header::before {
+    content: "04.";
+}
 
 /* Akiva's styles*/
 
@@ -2174,4 +2193,12 @@ body {
 #paypal-form-fields-container-8NG32GZMZCDL2 {
     justify-content: center;
     flex-direction: row;
+}
+
+#about-boxes {
+    margin-top: 130px;
+    margin-bottom: 0;
+    background-color: #fffffff0;
+    padding: 50px;
+    border-radius: 100px;
 }
