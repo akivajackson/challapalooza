@@ -1359,10 +1359,11 @@ h2.entry-title {
 # Page Header
 ------------------------------------------------------------*/
 .tickets-page .page-header {
-    /*background: url("images/tickets-page-header-background.jpg") no-repeat;*/
+    background: url("images/merch_photo.jpg") no-repeat;
+    background-size: cover;
 
     h2, ul, li > a {
-        color: black;
+        /*color: black;*/
     }
 }
 
