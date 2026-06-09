@@ -436,6 +436,15 @@ li.moho-logo {
     color: hsl(0, 0%, 48%);
 }
 
+#about-challapalooza {
+    background: white;
+    padding: 20px;
+    margin: 30px;
+    margin-top: -40px;
+    margin-bottom: 40px;
+    font-size: 1.3rem;
+}
+
 .entry-title h2,
 h2.entry-title {
     width: 100%;
